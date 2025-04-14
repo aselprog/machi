@@ -68,19 +68,32 @@
       background: #f2dede;
       color: #a94442;
     }
+    
+          .kwenda{
+        padding: 10px;
+        background-color: blue;
+        border-radius: 5px;
+        border: none;
+      }
+      .kwenda .futa{
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        
+      }
   </style>
 </head>
 <body>
 
   <div id="view-tab" class="tab active">
     <h2>Teams List</h2>
+    <button class="kwenda"> <a href="index.html" class="futa">ADD MATCH</a></button>
     <table>
       <thead>
         <tr>
           <th>Actions</th>
           <th>Team Name</th>
           <th>Team Logo</th>
-          <th>Match Link</th>
           <th>League Name</th>
           <th>Status</th>
         </tr>
@@ -122,7 +135,6 @@
                 </td>
                 <td>${row[0]}</td>
                 <td><img src="${row[1]}" width="50"></td>
-                <td style="max-width:150px; word-break:break-word;">${row[2]}</td>
                 <td>${row[3]}</td>
                 <td>${row[4]}</td>
               </tr>`;
